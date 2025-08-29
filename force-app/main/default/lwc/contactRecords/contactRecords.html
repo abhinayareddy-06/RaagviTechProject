@@ -1,0 +1,15 @@
+<template>
+    <template if:true={showContact}>
+        <lightning-card title="Contact Information">
+            <template for:each={contacts} for:item="contact">
+                <p key={contact.Id}>Name: {contact.Name}</p>
+
+
+                <p key={contact.Id}>Phone: {contact.Phone}</p>
+    
+            </template>
+        </lightning-card>
+    </template>
+</template>
+
+
